@@ -6,7 +6,7 @@ from rest_framework.throttling import UserRateThrottle
 
 from apps.snippets.models import Snippet
 from apps.snippets.serializers import SnippetSerializer
-from urlth import throttle
+from throttle import throttle
 
 
 class SnippetViewSet(viewsets.ModelViewSet):

@@ -121,9 +121,10 @@ REST_FRAMEWORK = {
         'rest_framework.parsers.JSONParser',
         'rest_framework.renderers.BrowsableAPIRenderer',
     ],
-    "DEFAULT_THROTTLE_CLASSES": ["urlth.throttle.UserThrottle"],
+    "DEFAULT_THROTTLE_CLASSES": ["throttle.throttle.UserThrottle"],
     "DEFAULT_THROTTLE_RATES": {
         "anonymous": '5/m',
         "user": '10/m',
+
     }
 }
