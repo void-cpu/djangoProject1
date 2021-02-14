@@ -11,7 +11,7 @@ from throttle import throttle
 
 class SnippetViewSet(viewsets.ModelViewSet):
     queryset = Snippet.objects.all()
-    throttle_classes = [throttle.VisitThrottle]
+    throttle_classes = [throttle.UserThrottle]
     serializer_class = SnippetSerializer
 
 
